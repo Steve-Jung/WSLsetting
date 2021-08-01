@@ -216,6 +216,7 @@ https://code.visualstudio.com/
    - install : [https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 
    - 설치
+
      `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 
    - code ~/.zshrc 의 plugins 부분에 아래코드 추가
