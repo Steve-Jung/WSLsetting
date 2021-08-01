@@ -222,15 +222,19 @@ ex) `git clone https://github.com/Steve-Jung/react-nodebird`
     권한 `chmod a+x certbot-auto` (a+x 는 모든 유저에게 권한 부여)
 
     오류 발생
+
     `sudo lsof -i tcp:80` - 80포트에서 사용되는 PID 확인
+
     `sudo kill -9 {PID}`
 
     nginx 실행
+
     `sudo systemctl start nginx`
     `sudo systemctl status nginx`
     `sudo systemctl restart nginx`
 
     실행
+
     `./certbot-auto`
 
     certbot-auto 실행 후
@@ -247,16 +251,21 @@ ex) `git clone https://github.com/Steve-Jung/react-nodebird`
     `/etc/letsencrypt/live/jungjisub.com/privkey.pem`
 
     확인
+
     `sudo su`
     ``vim /etc/nginx/nginx.conf`
     `sudo systemctl restart nginx`
 
     갱신
+
     `./certbot-auto renew`
 
     갱신 자동화 - 리눅스 스케쥴러 크론탭
+
     `crontab`
+
     분단위 시간단위 몇일 몇월 요일 실행할명령어
+
     `6 5,10 \* \* \* /home/ubuntu/react-nodebird/front/cerbot-auto renew`
 
     crontab 스케쥴 목록 확인
