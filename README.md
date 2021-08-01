@@ -199,41 +199,40 @@ https://code.visualstudio.com/
 
 ### 기타 플러그인 - [참고 https://boltlessengineer.tistory.com/84](https://boltlessengineer.tistory.com/84)
 
-    1. syntax-highlighting - [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+1. syntax-highlighting - [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-    	- install : [https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+   - install : [https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
 
-    	- 설치
+   - 설치
+     ```bash
+     	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+     ```
+   - `code ~/.zshrc` 의 `plugins` 부분에 아래코드 추가
 
-    		`git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+     `plugins=(git zsh-syntax-highlighting)`
 
-    	- `code ~/.zshrc` 의 `plugins` 부분에 아래코드 추가
+2. zsh-autosuggestions - [https://github.com/zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 
-    		`plugins=(git zsh-syntax-highlighting)`
+   - install : [https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 
-    2. zsh-autosuggestions - [https://github.com/zsh-users/zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+   - 설치
+     `git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
 
-    	- install : [https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+   - code ~/.zshrc 의 plugins 부분에 아래코드 추가
 
-    	- 설치
-    		`git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions`
+     `plugins=(git zsh-syntax-highlighting zsh-autosuggestions) - uninstall`
 
-    	- code ~/.zshrc 의 plugins 부분에 아래코드 추가
+     `rm -rf ~/.zsh/zsh-autosuggestions # Or wherever you installed`
 
-    		`plugins=(git zsh-syntax-highlighting zsh-autosuggestions) - uninstall`
+3. lsd 설치
 
-    		`rm -rf ~/.zsh/zsh-autosuggestions # Or wherever you installed`
+   - install : [https://boltlessengineer.tistory.com/86](https://boltlessengineer.tistory.com/86)
 
-    3. lsd 설치
+   - 설치
 
-    	- install : [https://boltlessengineer.tistory.com/86](https://boltlessengineer.tistory.com/86)
+     `sudo dpkg -i {다운로드한*.deb*패키지*이름*확장자\_포함}`
 
-    	- 설치
-
-
-    		`sudo dpkg -i {다운로드한*.deb*패키지*이름*확장자\_포함}`
-
-    		`sudo dpkg -i ./lsd_0.18.0_amd64.deb`
+     `sudo dpkg -i ./lsd_0.18.0_amd64.deb`
 
 ---
 
