@@ -204,7 +204,9 @@ https://code.visualstudio.com/
    - install : [https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
 
    - 설치
+
      `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+
    - `code ~/.zshrc` 의 `plugins` 부분에 아래코드 추가
 
      `plugins=(git zsh-syntax-highlighting)`
